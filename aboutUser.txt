@@ -1,0 +1,20 @@
+#创建用户
+sudo adduser username
+
+#删除用户
+sudo userdel username
+
+#创建组
+sudo groupadd groupname
+
+#删除组
+sudo groupdel groupname
+
+#查看当前用户所在的组
+groups
+
+#添加用户到组中
+sudo usermod -a -G groupname username
+
+#修改文件所属组(前提该用户已经在组中)
+chgrp groupname filename
